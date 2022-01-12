@@ -6,7 +6,7 @@ import sys
 from contextlib import contextmanager
 from functools import wraps
 from itertools import chain
-from typing import TextIO, Generator, Optional, Tuple, List, Set, Dict, Any
+from typing import Any, Dict, Generator, List, Optional, Set, TextIO, Tuple
 
 import click
 import inject
@@ -18,14 +18,13 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support.expected_conditions import (
-    presence_of_element_located,
     presence_of_all_elements_located,
+    presence_of_element_located,
 )
 from selenium.webdriver.support.ui import WebDriverWait
 from tqdm import tqdm
 from validators.url import url
 from webdriver_manager.chrome import ChromeDriverManager
-
 
 # ------------------------------------------------------------------------------------ #
 
