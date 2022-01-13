@@ -25,7 +25,8 @@
 ## 🌻 Motivation
 
 Demonstration of experience with [Selenium][github-selenium] for Web Scraping
-💪. Analyzing non-sensitive data about ads on the site 🧐.
+💪. Analyzing non-sensitive data about ads on the site 🧐. No ready solutions
+for collecting data from the site 😢.
 
 ## ✨ Getting Started
 
