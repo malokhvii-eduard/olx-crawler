@@ -390,12 +390,16 @@ def cli():
 @price
 @location
 @all
+@click.option("--no-free", is_flag=True, help="Exclude free.")
+@click.option("--no-paid", is_flag=True, help="Exclude paid.")
 def ads(
     links: Tuple[str, ...],
     headless: bool,
     progress: bool,
     proxy: Optional[str],
     all: bool,
+    no_free: bool,
+    no_paid: bool,
     **kwargs,
 ):
     """
@@ -417,7 +421,7 @@ def ads(
         next(writer)
 
         for link in links:
-            for item in parse_ads(link):
+            for item in parse_ads(link, exclude_free=no_free, exclude_paid=no_paid):
                 writer.send(item)
 
 
