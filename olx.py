@@ -33,6 +33,7 @@ def get_links(
     links: Tuple[str, ...], progress: bool = False, stdin: TextIO = sys.stdin
 ) -> Generator[str, None, None]:
     if not links and stdin.isatty():
+        click.echo("Oops, input is a terminal, not a pipe!", err=True)
         sys.exit(1)
 
     links = links if links else stdin
