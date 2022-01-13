@@ -30,11 +30,42 @@ for collecting data from the site 😢.
 
 ## ✨ Getting Started
 
+### 📚 Prerequisites
+
+You will need to install only [Google Chrome][google-chrome], thats all. No
+need manual installation of WebDriver binary.
+[@SergeyPirogov](https://github.com/SergeyPirogov) thank you for
+[WebDriver Manager][github-webdriver-manager].
+
 ### 📦 Installation
 
 1. Clone the *Repository*
 2. Install this *Package* (`./setup.py install`) or install dependencies from
 [Pipfile](Pipfile) (`pipenv install`)
+
+### 👀 Usage
+
+<!-- markdownlint-disable MD013 -->
+```bash
+olx ads --help # Show help for ads command and exit
+olx ads "https://www.olx.ua/uk/zhivotnye/koshki/" # Collect all ads with cats
+olx ads --no-free ... # Only paid ads
+olx ads --no-paid ... # Only free ads
+olx ads --kind --title --price --location ... # Collect extra fields
+
+olx ad --help # Show help for ad command and exit
+olx ad "https://www.olx.ua/d/uk/obyavlenie/laskovye-shotlandskie-malyshi-IDNyrf4.html" # Collect ad details
+olx ad --keywords keywords.txt ... # Filter by keywords
+olx ad --title --description --author --profile --price --location ... # Collect extra fields
+
+olx ads --progress ... # Show progress
+olx ads --no-headless ... # Disabled headless mode
+olx ads --proxy "socks5://..." # Use proxy server
+olx ads --all ... # Collect all fields
+olx ads --no-link ... # Skip link field
+olx ads "https://www.olx.ua/uk/zhivotnye/koshki/" | olx ad --all --progress > ads.csv # Commands chaining
+```
+<!-- markdownlint-enable MD013 -->
 
 ## 🛠️ Tech Stack
 
@@ -78,6 +109,7 @@ for more information.
 
 <!-- markdownlint-disable MD013 -->
 <!-- Github links -->
+[github-webdriver-manager]: https://github.com/SergeyPirogov/webdriver_manager
 [github-bandit]: https://github.com/PyCQA/bandit
 [github-black]: https://github.com/psf/black
 [github-click]: https://github.com/pallets/click
@@ -93,3 +125,4 @@ for more information.
 [editorconfig]: https://editorconfig.org
 [git-scm]: https://git-scm.com
 [shields]: https://shields.io
+[google-chrome]: https://www.google.com/intl/en/chrome/
