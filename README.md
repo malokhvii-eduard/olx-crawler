@@ -22,6 +22,14 @@
   </p>
 </div>
 
+## 🎉 Features
+
+- 🦾 Enough performance
+- 🎭 Anonymous, especially via [Tor][tor]
+- ⚖️ Non-sensitive data
+- 🔍 Filtering by keywords
+- ⛓️ Commands chaining
+
 ## 🌻 Motivation
 
 Demonstration of experience with [Selenium][github-selenium] for Web Scraping
@@ -109,7 +117,6 @@ for more information.
 
 <!-- markdownlint-disable MD013 -->
 <!-- Github links -->
-[github-webdriver-manager]: https://github.com/SergeyPirogov/webdriver_manager
 [github-bandit]: https://github.com/PyCQA/bandit
 [github-black]: https://github.com/psf/black
 [github-click]: https://github.com/pallets/click
@@ -119,10 +126,12 @@ for more information.
 [github-pre-commit]: https://github.com/pre-commit/pre-commit
 [github-selenium]: https://github.com/SeleniumHQ/selenium
 [github-tqdm]: https://github.com/tqdm/tqdm
+[github-webdriver-manager]: https://github.com/SergeyPirogov/webdriver_manager
 [github]: https://github.com
 
 <!-- Other links -->
 [editorconfig]: https://editorconfig.org
 [git-scm]: https://git-scm.com
-[shields]: https://shields.io
 [google-chrome]: https://www.google.com/intl/en/chrome/
+[shields]: https://shields.io
+[tor]: https://www.torproject.org/
