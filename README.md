@@ -6,7 +6,7 @@
   <p align="center">
     An easy-to-use, powerful crawler for
     <a href="https://olx.ua" aria-label="OLX">OLX</a>, that allows collecting
-    various non-sensitivity data about ads on the site.
+    various non-sensitive data about ads on the site.
   </p>
 
   <p id="shields" align="center" markdown="1">
@@ -22,7 +22,18 @@
   </p>
 </div>
 
-:construction: Coming soon...
+## 🌻 Motivation
+
+Demonstation of experience with [Selenium][github-selenium] for Web Scraping
+💪. Analyzing non-sensitive data about ads on the site 🧐.
+
+## ✨ Getting Started
+
+### 📦 Installation
+
+1. Clone the *Repository*
+2. Install this *Package* (`./setup.py install`) or install dependencies from
+[Pipfile](Pipfile) (`pipenv install`)
 
 ## 🛠️ Tech Stack
 
