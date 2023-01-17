@@ -37,7 +37,7 @@ def get_links(
         sys.exit(1)
 
     links = links if links else stdin
-    links = filter(lambda l: url(l), map(lambda l: l.strip(), links))
+    links = filter(lambda x: url(x), map(lambda x: x.strip(), links))
     links = tqdm(links) if progress else links
 
     for link in links:
